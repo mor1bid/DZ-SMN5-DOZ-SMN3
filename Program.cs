@@ -72,7 +72,7 @@ Z3();
  Console.WriteLine();
  void Z4() 
  {
- int [] ray = new int [6];
+ int [] ray = new int [5];
  int i = 0,
  size = ray.Length;
  Console.Write("Массив [");
