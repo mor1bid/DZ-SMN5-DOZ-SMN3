@@ -69,6 +69,7 @@ Console.WriteLine(" нет числа " + num);
 Console.WriteLine();
 Z3();
 
+ Console.WriteLine();
  void Z4() 
  {
  int [] ray = new int [6];
@@ -82,7 +83,7 @@ Z3();
  Console.Write(($"{ray[i]}" + ", "));
  i++;
  }
- i = size/2;
+ i = 0;
  Console.Write("\b\b" + "]");
  Console.WriteLine();
  int mi = size - 1, mid = size/2;
