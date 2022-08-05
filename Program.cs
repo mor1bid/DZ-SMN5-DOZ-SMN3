@@ -86,11 +86,13 @@ Console.Write("\b\b" + "]");
 Console.WriteLine();
 i = 0;
 int j = size;
-while(i < j+1) 
+while(i <= j) 
 {
-Console.WriteLine("Произведение " + $"{ray[i]}" + " * " + $"{ray[j]}" + " = " + $"{ray[i]*ray[j]}");
-j--;
+    int res = ray[i] * ray[j];
+//Console.WriteLine("Произведение " + $"{ray[i]}" + " * " + $"{ray[j]}" + " = " + $"{ray[i]*ray[j]}");
+Console.WriteLine("Произведение " + ray[i] + " * " + ray[j] + " = " + res);
 i++;
+j--;
 }
 }
 Console.WriteLine();
