@@ -90,9 +90,8 @@ Z3();
  {
      int res = ray[i] * ray[mi-i];
      //Console.WriteLine("Произведение " + $"{ray[i]}" + " * " + $"{ray[j]}" + " = " + $"{ray[i]*ray[j]}");
-     Console.WriteLine("Произведение " + ray[i] + " * " + ray[j] + " = " + res);
+     Console.WriteLine("Произведение " + ray[i] + " * " + ray[mi-i] + " = " + res);
      i++;
-     j--;
 }
 }
 Console.WriteLine();
