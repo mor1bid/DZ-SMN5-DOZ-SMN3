@@ -25,7 +25,7 @@ int [] ray = new int [5];
 Console.Write("В массиве [");
 while (i<ray.Length) 
 {
-int rayn = new Random().Next(0, 50);
+int rayn = new Random().Next(0, 11);
 ray[i] = rayn;
 Console.Write(($"{ray[i]}" + ", "));
 i++;
@@ -35,13 +35,13 @@ while (i<ray.Length)
 {
 if (ray[i] == num) 
 { 
-    Console.Write("\b\b " + "]");
+    Console.Write("\b " + "]");
     Console.Write(" есть число " + num); 
     return; 
     }
 else i++;
 }
-Console.Write("\b\b " + "]");
+Console.Write("\b " + "]");
 Console.WriteLine(" нет числа " + num); 
 
 
