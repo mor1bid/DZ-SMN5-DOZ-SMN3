@@ -35,7 +35,7 @@ while (i<ray.Length)
     Console.Write(ray[i] + ", ");
     i++;
 }
-
+Console.Write("\b\b" + "]");
 }
 Console.WriteLine();
 Z2();
