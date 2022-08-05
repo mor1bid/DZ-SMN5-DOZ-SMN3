@@ -25,9 +25,9 @@ int [] ray = new int [5];
 Console.Write("В массиве [");
 while (i<ray.Length) 
 {
-int rayn = new Random().Next(0, 2000000001);
+int rayn = new Random().Next(0, 50);
 ray[i] = rayn;
-Console.WriteLine(($"{ray[i]} + ", ""));
+Console.Write(($"{ray[i]}" + ", "));
 i++;
 }
 i = 0;
