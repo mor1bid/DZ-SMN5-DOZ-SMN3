@@ -22,14 +22,27 @@ Console.WriteLine("Введите число:");
 int num = Convert.ToInt32(Console.ReadLine()), 
     i = 0;
 int [] ray = new int [5];
+Console.Write("В массиве [");
 while (i<ray.Length) 
 {
 int rayn = new Random().Next(0, 2000000001);
 ray[i] = rayn;
-if (ray[i] == num) Console.WriteLine("Число " + num + " есть в массиве " + ($"{ray[i]} + ", ""));
+Console.WriteLine(($"{ray[i]} + ", ""));
 i++;
 }
-
+i = 0;
+while (i<ray.Length) 
+{
+if (ray[i] == num) 
+{ 
+    Console.Write("\b\b " + "]");
+    Console.Write(" есть число " + num); 
+    return; 
+    }
+else i++;
+}
+Console.Write("\b\b " + "]");
+Console.WriteLine(" нет числа " + num); 
 
 
 }
