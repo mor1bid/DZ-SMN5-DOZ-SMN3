@@ -69,34 +69,34 @@ Console.WriteLine(" нет числа " + num);
 Console.WriteLine();
 Z3();
 
-// void Z4() 
-// {
-// int [] ray = new int [6];
-// int i = 0,
-// size = ray.Length;
-// Console.Write("Массив [");
-// while (i<ray.Length) 
-// {
-// int rayn = new Random().Next(0, 11);
-// ray[i] = rayn;
-// Console.Write(($"{ray[i]}" + ", "));
-// i++;
-// }
-// i = 0;
-// Console.Write("\b\b" + "]");
-// Console.WriteLine();
-// int j = size;
-// while(i < j) 
-// {
-//     int res = ray[i] * ray[j];
-//     //Console.WriteLine("Произведение " + $"{ray[i]}" + " * " + $"{ray[j]}" + " = " + $"{ray[i]*ray[j]}");
-//     Console.WriteLine("Произведение " + ray[i] + " * " + ray[j] + " = " + res);
-//     i++;
-//     j--;
-// }
-// }
-// Console.WriteLine();
-// Z4();
+ void Z4() 
+ {
+ int [] ray = new int [6];
+ int i = 0,
+ size = ray.Length;
+ Console.Write("Массив [");
+ while (i<ray.Length) 
+ {
+ int rayn = new Random().Next(0, 11);
+ ray[i] = rayn;
+ Console.Write(($"{ray[i]}" + ", "));
+ i++;
+ }
+ i = 0;
+ Console.Write("\b\b" + "]");
+ Console.WriteLine();
+ int j = size;
+ while (j > 0) 
+ {
+     int res = ray[i] * ray[j];
+     //Console.WriteLine("Произведение " + $"{ray[i]}" + " * " + $"{ray[j]}" + " = " + $"{ray[i]*ray[j]}");
+     Console.WriteLine("Произведение " + ray[i] + " * " + ray[j] + " = " + res);
+     i++;
+     j--;
+}
+}
+Console.WriteLine();
+Z4();
 
 void Z5() 
 {
@@ -120,7 +120,7 @@ while(i < size)
     if (ray[i] >= 10 && ray[i] <= 99) co++;
     i++;
 }
-Console.WriteLine(" - " + co + "элементов в данном промежутке");
+Console.Write(" - " + co + " элемента(ов) в данном промежутке");
 }
 Console.WriteLine();
 Z5();
