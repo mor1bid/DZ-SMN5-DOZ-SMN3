@@ -35,13 +35,13 @@ while (i<ray.Length)
 {
 if (ray[i] == num) 
 { 
-    Console.Write("\b " + "]");
+    Console.Write("\b\b" + "]");
     Console.Write(" есть число " + num); 
     return; 
     }
 else i++;
 }
-Console.Write("\b " + "]");
+Console.Write("\b\b" + "]");
 Console.WriteLine(" нет числа " + num); 
 
 
