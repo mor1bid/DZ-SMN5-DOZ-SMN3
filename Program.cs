@@ -82,11 +82,11 @@ Z3();
  Console.Write(($"{ray[i]}" + ", "));
  i++;
  }
- i = 0;
+ i = size/2;
  Console.Write("\b\b" + "]");
  Console.WriteLine();
- int j = size;
- while (i != j-2)
+ int j = size/2;
+ while (i < j)
  {
      int res = ray[i] * ray[j];
      //Console.WriteLine("Произведение " + $"{ray[i]}" + " * " + $"{ray[j]}" + " = " + $"{ray[i]*ray[j]}");
