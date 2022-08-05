@@ -11,10 +11,10 @@ void Z2()
 {
 int [] ray = new int [5];
 int i = 0;
-Console.Write("Был [");
+Console.Write("Был: [");
 while (i<ray.Length) 
 {
-int rayn = new Random().Next(0, 11);
+int rayn = new Random().Next(-11, 12);
 ray[i] = rayn;
 Console.Write(($"{ray[i]}" + ", "));
 i++;
