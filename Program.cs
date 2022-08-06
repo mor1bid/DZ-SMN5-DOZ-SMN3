@@ -44,7 +44,7 @@ Random ra = new Random();
 Console.Write("38. В массиве [");
 for (int i = 0; i < si; i++)
     {
-        double num = ra.Next(1, 11);
+        double num = ra.Next(-10, 11);
         ray[i] = num;
         Console.Write(ray[i] + ", ");
     }
