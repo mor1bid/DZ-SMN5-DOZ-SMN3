@@ -2,9 +2,7 @@
 {
 int si = new Random().Next(4, 14);
 int [] rayh = new int [si];
-int //i = 0, 
-    //si = rayh.Length, 
-    eco = 0, 
+int eco = 0, 
     uco = 0;
 Console.Write("34. В массиве [");
     for (int i = 0; i < si; i++)
@@ -37,14 +35,13 @@ Console.WriteLine();
 
 void DZ3() 
 {
-int //sum = 0, 
-    si = new Random().Next(4, 14);
+int si = new Random().Next(4, 14);
 double [] ray = new double [si];
 Random ra = new Random();
 Console.Write("38. В массиве [");
 for (int i = 0; i < si; i++)
     {
-        double num = ra.Next(-10, 11);
+        double num = ra.NextDouble();
         ray[i] = num;
         Console.Write(ray[i] + ", ");
     }
