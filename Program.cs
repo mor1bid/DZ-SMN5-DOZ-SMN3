@@ -39,15 +39,16 @@ void DZ3()
 {
 int //sum = 0, 
     si = new Random().Next(4, 14);
-int [] ray = new int [si];
+double [] ray = new double [si];
+Random ra = new Random();
 Console.Write("38. В массиве [");
 for (int i = 0; i < si; i++)
     {
-        int num = new Random().Next(1, 10);
+        double num = ra.Next(1, 11);
         ray[i] = num;
         Console.Write(ray[i] + ", ");
     }
-int max = 0, min = ray[0];
+double max = 0, min = ray[0];
 for (int i = 0; i < si; i++) 
     {
         if (ray[i] >= max) max = ray[i];
