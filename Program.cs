@@ -1,29 +1,19 @@
 ﻿void DZ1() 
 {
-int [] rayh = new int [4];
-int i = 0, 
-    size = rayh.Length, 
+int si = new Random().Next(4, 14);
+int [] rayh = new int [si];
+int //i = 0, 
+    //si = rayh.Length, 
     eco = 0, 
     uco = 0;
-Console.Write("В массиве [");
-void FRay() 
-{
-    for (int i = 0; i < size; i++)
+Console.Write("34. В массиве [");
+    for (int i = 0; i < si; i++)
     {
         int num = new Random().Next(100, 1000);
         rayh[i] = num;
         Console.Write(rayh[i] + ", ");
-        //if (rayh[i] % 2 == 0) eco++;
-        //else uco++;
-    }
-}
-FRay();
-i = 0;
-    while (i<size) 
-    {
         if (rayh[i] % 2 == 0) eco++;
         else uco++;
-        i++;
     }
 Console.Write("\b\b" + "] - " + eco + " чётных чисел и " + uco + " нечётных." );
 Console.WriteLine();
@@ -32,8 +22,18 @@ Console.WriteLine();
 Console.WriteLine();
 void DZ2() 
 {
-int [] ray = new int [4];
-
+int sum = 0, co = 0, si = new Random().Next(4, 14);
+int [] ray = new int [si];
+Console.Write("36. В массиве [");
+for (int i = 0; i < si; i++)
+    {
+        int num = new Random().Next(1, 10);
+        ray[i] = num;
+        Console.Write(ray[i] + ", ");
+        if (i % 2 != 0) sum += ray[i]; co++;
+    }
+Console.Write("\b\b" + "] - " + co + " нечётных чисел. Их сумма составляет " + sum);
+Console.WriteLine();
 }
 DZ1();
 DZ2();
