@@ -90,7 +90,6 @@ Z3();
  while (i < mid)
  {
      res = ray[i] * ray[mi-i];
-     //Console.WriteLine("Произведение " + $"{ray[i]}" + " * " + $"{ray[j]}" + " = " + $"{ray[i]*ray[j]}");
      Console.WriteLine("Произведение " + ray[i] + " * " + ray[mi-i] + " = " + res);
      i++;
 }
