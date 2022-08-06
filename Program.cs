@@ -34,5 +34,23 @@ for (int i = 0; i < si; i++)
 Console.Write("\b\b" + "] = " + sum);
 Console.WriteLine();
 }
+
+void DZ3() 
+{
+int max = 0, min = 0, sum = 0, si = new Random().Next(4, 14);
+int [] ray = new int [si];
+Console.Write("38. В массиве [");
+for (int i = 0; i < si; i++)
+    {
+        int num = new Random().Next(1, 10);
+        ray[i] = num;
+        Console.Write(ray[i] + ", ");
+        if (ray[i] >= max) max = ray[i];
+        else if (ray[i] < min) min = ray[i];
+    }
+Console.Write("\b\b" + "] разница между максимальным значением " + max + " и минимальным значением " + min + " = " + sum);
+}
+
 DZ1();
 DZ2();
+DZ3();
