@@ -23,7 +23,7 @@ void DZ2()
 {
 int sum = 0, si = new Random().Next(4, 14);
 int [] ray = new int [si];
-Console.Write("36. В массиве [");
+Console.Write("36. Сумма чисел на нечётных позициях в массиве [");
 for (int i = 0; i < si; i++)
     {
         int num = new Random().Next(1, 10);
@@ -31,7 +31,7 @@ for (int i = 0; i < si; i++)
         Console.Write(ray[i] + ", ");
         if (i % 2 != 0) sum += ray[i];
     }
-Console.Write("\b\b" + "] - " + " сумма чисел на нечётных позициях массива составляет " + sum);
+Console.Write("\b\b" + "] = " + sum);
 Console.WriteLine();
 }
 DZ1();
