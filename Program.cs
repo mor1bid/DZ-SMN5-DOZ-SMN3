@@ -86,13 +86,18 @@ Z3();
  i = 0;
  Console.Write("\b\b" + "]");
  Console.WriteLine();
- int mi = size - 1, mid = size/2;
+ int mi = size - 1, mid = size/2, res = ray[i] * ray[mi-i];
  while (i < mid)
  {
-     int res = ray[i] * ray[mi-i];
+     res = ray[i] * ray[mi-i];
      //Console.WriteLine("Произведение " + $"{ray[i]}" + " * " + $"{ray[j]}" + " = " + $"{ray[i]*ray[j]}");
      Console.WriteLine("Произведение " + ray[i] + " * " + ray[mi-i] + " = " + res);
      i++;
+}
+if (size % 2 != 0) 
+{
+    res = ray[i] * ray[mi-i]; 
+    Console.WriteLine("Произведение " + ray[i] + " * " + ray[mi-i] + " = " + res);
 }
 }
 Console.WriteLine();
