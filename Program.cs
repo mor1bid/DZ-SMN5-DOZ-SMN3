@@ -45,7 +45,7 @@ for (int i = 0, i2 = si-1; i != i2; i++, i2--)
         int numa = ra.Next(-10, 11);
         ray[i] = numa;
         Console.Write(ray[i] + ", ");
-        double numb = Math.Round(ra.NextDouble() * (mav-miv)+miv, 2);
+        double numb = Math.Round (ra.NextDouble() * (mav-miv)+miv, 2);
         ray[i2] = numb;
         Console.Write(ray[i2] + ", ");
     }
