@@ -52,8 +52,8 @@ for (int i = 0; i < si; i++)
         if (ray[i] >= max) max = ray[i];
         else if (ray[i] < min) min = ray[i];
     }
-if (min<0) Console.Write("\b\b" + "] разница между максимальным значением " + max + " и минимальным значением " + min + " = " + $"{max+min}");
-else Console.Write("\b\b" + "] разница между максимальным значением " + max + " и минимальным значением " + min + " = " + $"{max-min}");
+if (min<0) Console.Write("\b\b" + "] разница между максимальным значением " + max + " и минимальным значением " + min + " = " + $"{Math.Round(max+min, 2)}");
+else Console.Write("\b\b" + "] разница между максимальным значением " + max + " и минимальным значением " + min + " = " + $"{Math.Round(max-min, 2)}");
 }
 
 DZ1();
