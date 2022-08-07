@@ -40,13 +40,14 @@ double [] ray = new double [si];
 double mav = -10.5, miv = 11.5; 
 Random ra = new Random();
 Console.Write("38. В массиве [");
-for (int i = 0; i < si; i++)
+for (int i = 0; i < si+1; i++)
     {
         int numa = ra.Next(-10, 11);
         ray[i] = numa;
+        Console.Write(ray[i] + ", ");
         double numb = Math.Round (ra.NextDouble() * (mav-miv)+miv, 2);
         ray[i+1] = numb;
-        Console.Write(ray[i] + ", ");
+        Console.Write(ray[i+1] + ", ");
     }
 double max = 0, min = ray[0];
 for (int i = 0; i < si; i++)
