@@ -49,7 +49,7 @@ for (int i = 0, i2 = si-1; i < i2; i++, i2--)
         ray[i2] = numb;
         Console.Write(ray[i2] + ", ");
     }
-double max = 0, min = ray[0];
+double max = ray[0], min = ray[0];
 for (int i = 0; i < si; i++)
     {
         if (ray[i] >= max) max = ray[i];
