@@ -46,7 +46,7 @@ for (int i = 0; i < si; i++)
         ray[i] = numa;
         Console.Write(ray[i] + ", ");
         double numb = Math.Round (ra.NextDouble() * (mav-miv)+miv, 2);
-        ray[i+1] = numb;
+        ray[i] = numb;
         Console.Write(ray[i+1] + ", ");
     }
 double max = 0, min = ray[0];
