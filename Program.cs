@@ -37,11 +37,12 @@ void DZ3()
 {
 int si = new Random().Next(4, 14);
 double [] ray = new double [si];
+double mav = -10.5, miv = 11.5; 
 Random ra = new Random();
 Console.Write("38. В массиве [");
 for (int i = 0; i < si; i++)
     {
-        double num = Math.Round (ra.NextDouble(), 2);
+        double num = Math.Round (ra.NextDouble() * (mav-miv)+miv, 2);
         ray[i] = num;
         Console.Write(ray[i] + ", ");
     }
