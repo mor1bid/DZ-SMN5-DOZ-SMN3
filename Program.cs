@@ -42,12 +42,14 @@ Random ra = new Random();
 Console.Write("38. В массиве [");
 for (int i = 0; i < si; i++)
     {
-        double num = Math.Round (ra.NextDouble() * (mav-miv)+miv, 2);
-        ray[i] = num;
+        int numa = ra.Next(-10, 11);
+        ray[i] = numa;
+        double numb = Math.Round (ra.NextDouble() * (mav-miv)+miv, 2);
+        ray[i+1] = numb;
         Console.Write(ray[i] + ", ");
     }
 double max = 0, min = ray[0];
-for (int i = 0; i < si; i++) 
+for (int i = 0; i < si; i++)
     {
         if (ray[i] >= max) max = ray[i];
         else if (ray[i] < min) min = ray[i];
