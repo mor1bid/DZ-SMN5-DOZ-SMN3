@@ -39,7 +39,7 @@ int si = new Random().Next(4, 14);
 double [] ray = new double [si];
 double mav = -10.5, miv = 11.5; 
 Random ra = new Random();
-Console.Write("38. В массиве [");
+Console.Write("38. В массиве из " + si + "элементов [");
 for (int i = 0, i2 = si-1; i != i2; i++, i2--)
     {
         int numa = ra.Next(-10, 11);
