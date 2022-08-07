@@ -40,7 +40,7 @@ double [] ray = new double [si];
 double mav = -10.5, miv = 11.5; 
 Random ra = new Random();
 Console.Write("38. В массиве [");
-for (int i = 0; i < si+1; i++)
+for (int i = 0; i < si; i++)
     {
         int numa = ra.Next(-10, 11);
         ray[i] = numa;
