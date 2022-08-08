@@ -1,37 +1,38 @@
 ﻿void DZ1() 
 {
 int si = new Random().Next(4, 14);
-int [] rayh = new int [si];
+int [] ray = new int [si];
 int eco = 0, 
     uco = 0;
 Console.Write("34. В массиве [");
+DZ2();
     for (int i = 0; i < si; i++)
     {
-        int num = new Random().Next(100, 1000);
-        rayh[i] = num;
-        Console.Write(rayh[i] + ", ");
-        if (rayh[i] % 2 == 0) eco++;
+        if (ray[i] % 2 == 0) eco++;
         else uco++;
     }
 Console.Write("\b\b" + "] - " + eco + " чётных чисел и " + uco + " нечётных." );
 Console.WriteLine();
 }
 
-void DZ2() 
-{
 int sum = 0, si = new Random().Next(4, 14);
 int [] ray = new int [si];
 Console.Write("36. Сумма чисел на нечётных позициях в массиве [");
+void DZ2() 
+{
 for (int i = 0; i < si; i++)
     {
         int num = new Random().Next(1, 10);
         ray[i] = num;
         Console.Write(ray[i] + ", ");
+    }
+}
+for (int i = 0; i < si; i++)
+    {
         if (i % 2 != 0) sum += ray[i];
     }
 Console.Write("\b\b" + "] = " + sum);
 Console.WriteLine();
-}
 
 void DZ3() 
 {
