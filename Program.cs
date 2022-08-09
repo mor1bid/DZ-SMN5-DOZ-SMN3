@@ -118,6 +118,7 @@ while (yi<=year)
     }
     }
 }
+Console.WriteLine("\b\b" + "");
 Console.WriteLine(" ");
 
 void DOZ51() 
@@ -171,7 +172,9 @@ for (int i = 0; i < size; i++)
         array[i] = num;
         Console.Write(array[i] + ", ");
     }
-Console.Write("\b\b" + "] = [");
+Console.Write("\b\b" + "]");
+Console.WriteLine("="); 
+Console.Write("[");
 int [] ray = new int [100];
 for (int i = 0; i < size; i++)
 {
