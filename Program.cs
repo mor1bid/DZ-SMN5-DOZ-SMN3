@@ -164,7 +164,8 @@ int [] array = new int [100];
 int size = array.Length,
     junk = 0;
     //i = 0;
-Console.WriteLine("3.7. В массиве [");
+Console.WriteLine();
+Console.Write("3.7. В массиве [");
 for (int i = 0; i < size; i++)
     {
         int num = new Random().Next(1, 10);
