@@ -57,6 +57,7 @@ for (int i = 0; i < si; i++)
     }
 if (min<0) Console.Write("\b\b" + "] разница между максимальным значением " + max + " и минимальным значением " + min + " = " + $"{Math.Round(max+min, 2)}");
 else Console.Write("\b\b" + "] разница между максимальным значением " + max + " и минимальным значением " + min + " = " + $"{Math.Round(max-min, 2)}");
+Console.WriteLine();
 }
 
 Console.WriteLine();
@@ -172,8 +173,9 @@ for (int i = 0; i < size; i++)
     }
 Console.Write("\b\b" + "] = [");
 int [] ray = new int [100];
-for (int i = 0, num = array[i]; i < size; i++)
+for (int i = 0; i < size; i++)
 {
+    int num = array[i];
     if (num % 10 == 3 || (num % 100)/10 == 3) 
         {
             junk++;
