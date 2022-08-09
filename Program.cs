@@ -154,7 +154,6 @@ else Console.WriteLine("Задана слишком малая длинна па
 Console.WriteLine();
 
 Console.WriteLine();
-Console.WriteLine();
 void DOZ71() 
 {
     // Массив из ста элементов заполняется случайными числами от 1 до 100. 
@@ -165,7 +164,7 @@ int [] array = new int [100];
 int size = array.Length,
     junk = 0;
     //i = 0;
-Console.Write("3.7. В массиве [");
+Console.WriteLine("3.7. В массиве [");
 for (int i = 0; i < size; i++)
     {
         int num = new Random().Next(1, 10);
