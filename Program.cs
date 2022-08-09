@@ -59,6 +59,7 @@ if (min<0) Console.Write("\b\b" + "] разница между максимал�
 else Console.Write("\b\b" + "] разница между максимальным значением " + max + " и минимальным значением " + min + " = " + $"{Math.Round(max-min, 2)}");
 }
 
+Console.WriteLine();
 void DOZ41() 
 {
     // Дан массив средних температур (массив заполняется случайно) за последние 10 лет. 
@@ -170,19 +171,18 @@ for (int i = 0; i < size; i++)
         Console.Write(array[i] + ", ");
     }
 Console.Write("\b\b" + "] = [");
+int [] ray = new int [100];
 for (int i = 0, num = array[i]; i < size; i++)
 {
     if (num % 10 == 3 || (num % 100)/10 == 3) 
         {
             junk++;
-            i++;
         }
     else 
         {
-            array [i] = num;
-            Console.Write(array[i]);
+            ray [i] = num;
+            Console.Write(ray[i]);
             Console.Write(", ");
-            i++;
         }
 }
 Console.WriteLine("\b\b" + "] было " + junk + " чисел с цифрой 3");
