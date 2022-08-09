@@ -117,7 +117,7 @@ while (yi<=year)
         i = 0;
         Console.WriteLine("В " + yi + " году:");
     }
-    if (yi==year) ymi = month;
+    if (yi==year-1) ymi = month;
     }
 }
 Console.WriteLine(" ");
