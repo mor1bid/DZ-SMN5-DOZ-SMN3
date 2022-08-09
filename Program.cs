@@ -112,13 +112,12 @@ while (yi<=year)
     if (mi>12) 
     { 
         mi=1; 
-        yi++; 
         Console.WriteLine("В " + yi + " году:");
+        yi++;
         i = 0;
     }
     }
 }
-Console.WriteLine("\b\b" + "");
 Console.WriteLine(" ");
 
 void DOZ51() 
@@ -173,6 +172,7 @@ for (int i = 0; i < size; i++)
         Console.Write(array[i] + ", ");
     }
 Console.Write("\b\b" + "]");
+Console.WriteLine(); 
 Console.WriteLine("="); 
 Console.Write("[");
 int [] ray = new int [100];
