@@ -160,12 +160,18 @@ void DOZ71()
 
 int [] array = new int [100];
 int size = array.Length,
-    junk = 0,
-    i = 0;
-Console.Write("3.7. В массиве [ "); 
-while (i<size) 
+    junk = 0;
+    //i = 0;
+Console.Write("3.7. В массиве [");
+for (int i = 0; i < size; i++)
+    {
+        int num = new Random().Next(1, 10);
+        array[i] = num;
+        Console.Write(array[i] + ", ");
+    }
+Console.Write("\b\b" + "] = [");
+for (int i = 0, num = array[i]; i < size; i++)
 {
-    int num = new Random().Next(1, 100);
     if (num % 10 == 3 || (num % 100)/10 == 3) 
         {
             junk++;
@@ -179,7 +185,7 @@ while (i<size)
             i++;
         }
 }
-Console.WriteLine("] было " + junk + " чисел с цифрой 3");
+Console.WriteLine("\b\b" + "] было " + junk + " чисел с цифрой 3");
 }
 Console.WriteLine(" ");
  
