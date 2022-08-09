@@ -88,7 +88,7 @@ i = 0;
 int yi = 0,
     mi = 1;
 Console.WriteLine("В " + yi + " году:");
-while (yi<=year) 
+while (yi-1<=year) 
     {
     int temp = mass [i], min = 0, plu = 0;
         if (temp>plu) plu = temp;
@@ -172,8 +172,7 @@ for (int i = 0; i < size; i++)
         array[i] = num;
         Console.Write(array[i] + ", ");
     }
-Console.Write("\b\b" + "]");
-Console.WriteLine(); 
+Console.WriteLine("\b\b" + "]"); 
 Console.WriteLine("="); 
 Console.Write("[");
 int [] ray = new int [100];
@@ -191,7 +190,8 @@ for (int i = 0; i < size; i++)
             Console.Write(", ");
         }
 }
-Console.WriteLine("\b\b" + "] было " + junk + " чисел с цифрой 3");
+Console.WriteLine("\b\b" + "]");
+Console.WriteLine("было " + junk + " чисел с цифрой 3");
 }
 Console.WriteLine(" ");
  
