@@ -111,10 +111,10 @@ while (yi<=year)
     mi++;
     if (mi>12) 
     { 
-        mi=1; 
-        Console.WriteLine("В " + yi + " году:");
+        mi=1;
         yi++;
         i = 0;
+        Console.WriteLine("В " + yi + " году:");
     }
     }
 }
@@ -151,9 +151,10 @@ if (n>4)
 }
 else Console.WriteLine("Задана слишком малая длинна пароля.");
 }
-Console.WriteLine(" ");
+Console.WriteLine();
 
-Console.WriteLine(" ");
+Console.WriteLine();
+Console.WriteLine();
 void DOZ71() 
 {
     // Массив из ста элементов заполняется случайными числами от 1 до 100. 
