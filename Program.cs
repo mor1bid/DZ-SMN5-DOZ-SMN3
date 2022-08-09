@@ -115,9 +115,9 @@ while (yi<=year)
         else if (yi==year && i>9) ymi += 1;
         if (mi==10 && ymi<month) Console.WriteLine ("В марте было от " + min + " до " + plu + "°C");
         else if (yi==year && i>10) ymi += 1;
-        if (mi==11 && i<month) Console.WriteLine ("В апреле было от " + min + " до " + plu + "°C");
+        if (mi==11 && ymi<month) Console.WriteLine ("В апреле было от " + min + " до " + plu + "°C");
         else if (yi==year && i>11) ymi += 1;
-        if (mi==12 && ymi<month) Console.WriteLine ("В мае было от " + min + " до " + plu + "°C");
+        if (mi==12 && ymi<=month) Console.WriteLine ("В мае было от " + min + " до " + plu + "°C");
 
     i++;
     mi++;
