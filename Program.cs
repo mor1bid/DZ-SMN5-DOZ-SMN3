@@ -88,7 +88,7 @@ i = 0;
 int yi = 0,
     mi = 1;
 Console.WriteLine("В " + yi + " году:");
-while (yi-1<=year) 
+while (yi+1<=year) 
     {
     int temp = mass [i], min = 0, plu = 0;
         if (temp>plu) plu = temp;
@@ -205,7 +205,6 @@ int numa = new Random().Next(2, 100),
     j = 1,
     i = 1;
 Console.WriteLine("3.8. Число: " + numa);
-Console.WriteLine(" ");
 while (i<=numa) 
 {
     if (j<=10) 
