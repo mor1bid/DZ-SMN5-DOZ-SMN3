@@ -88,7 +88,7 @@ i = 0;
 int yi = 0,
     mi = 1;
 Console.WriteLine("В " + yi + " году:");
-while (yi+1<=year) 
+while (yi<year) 
     {
     int temp = mass [i], min = 0, plu = 0;
         if (temp>plu) plu = temp;
