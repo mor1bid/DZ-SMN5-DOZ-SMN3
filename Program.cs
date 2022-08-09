@@ -96,17 +96,17 @@ while (yi<=year)
         else if (temp<min) min = temp;
         
         if (mi==1) Console.WriteLine ("В июне было от " + min + " до " + plu + "°C");
-        else if (mi==2 && yi<year && ymi<=month) Console.WriteLine ("В июле было от " + min + " до " + plu + "°C");
-        else if (mi==3 && yi<year && ymi<=month) Console.WriteLine ("В августе было от " + min + " до " + plu + "°C");
-        else if (mi==4 && yi<year && ymi<=month) Console.WriteLine ("В сентябре было от " + min + " до " + plu + "°C");
-        else if (mi==5 && yi<year && ymi<=month) Console.WriteLine ("В октябре было от " + min + " до " + plu + "°C");
-        else if (mi==6 && yi<year && ymi<=month) Console.WriteLine ("В ноябре было от " + min + " до " + plu + "°C");
-        else if (mi==7 && yi<year && ymi<=month) Console.WriteLine ("В декабре было от " + min + " до " + plu + "°C");
-        else if (mi==8 && yi<year && ymi<=month) Console.WriteLine ("В январе было от " + min + " до " + plu + "°C");
-        else if (mi==9 && yi<year && ymi<=month) Console.WriteLine ("В феврале было от " + min + " до " + plu + "°C");
-        else if (mi==10 && yi<year && ymi<=month) Console.WriteLine ("В марте было от " + min + " до " + plu + "°C");
-        else if (mi==11 && yi<year && ymi<=month) Console.WriteLine ("В апреле было от " + min + " до " + plu + "°C");
-        else if (mi==12 && yi<year && ymi<=month) Console.WriteLine ("В мае было от " + min + " до " + plu + "°C");
+        else if (mi==2 && ymi<=month) Console.WriteLine ("В июле было от " + min + " до " + plu + "°C");
+        else if (mi==3 && ymi<=month) Console.WriteLine ("В августе было от " + min + " до " + plu + "°C");
+        else if (mi==4 && ymi<=month) Console.WriteLine ("В сентябре было от " + min + " до " + plu + "°C");
+        else if (mi==5 && ymi<=month) Console.WriteLine ("В октябре было от " + min + " до " + plu + "°C");
+        else if (mi==6 && ymi<=month) Console.WriteLine ("В ноябре было от " + min + " до " + plu + "°C");
+        else if (mi==7 && ymi<=month) Console.WriteLine ("В декабре было от " + min + " до " + plu + "°C");
+        else if (mi==8 && ymi<=month) Console.WriteLine ("В январе было от " + min + " до " + plu + "°C");
+        else if (mi==9 && ymi<=month) Console.WriteLine ("В феврале было от " + min + " до " + plu + "°C");
+        else if (mi==10 && ymi<=month) Console.WriteLine ("В марте было от " + min + " до " + plu + "°C");
+        else if (mi==11 && ymi<=month) Console.WriteLine ("В апреле было от " + min + " до " + plu + "°C");
+        else if (mi==12 && ymi<=month) Console.WriteLine ("В мае было от " + min + " до " + plu + "°C");
 
     i++;
     mi++;
@@ -114,10 +114,10 @@ while (yi<=year)
     { 
         mi=1;
         yi++;
-        ymi++;
         i = 0;
         Console.WriteLine("В " + yi + " году:");
     }
+    if (yi==year) ymi = month;
     }
 }
 Console.WriteLine(" ");
